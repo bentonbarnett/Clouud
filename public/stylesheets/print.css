@@ -1,0 +1,70 @@
+/*
+Syntax error: Invalid CSS after "...emantic layout:": expected selector or at-rule, was "body.bp {"
+        on line 7 of /Users/Benton/Projects/Clouud/app/stylesheets/print.scss
+
+2: 
+3: // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
+4: @include blueprint-print
+5: 
+6: //Recommended Blueprint configuration with scoping and semantic layout:
+7: body.bp {
+8:   @include blueprint-print(true); }
+
+Backtrace:
+/Users/Benton/Projects/Clouud/app/stylesheets/print.scss:7
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/scss/parser.rb:898:in `expected'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/scss/parser.rb:841:in `expected'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/scss/parser.rb:27:in `parse'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/engine.rb:320:in `_to_tree'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/engine.rb:241:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/util.rb:297:in `silence_sass_warnings'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/engine.rb:241:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin.rb:81:in `update_stylesheets'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin.rb:54:in `check_for_updates'
+/usr/local/lib/ruby/gems/1.9.1/gems/sass-3.1.7/lib/sass/plugin/rack.rb:51:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:32:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/sendfile.rb:107:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.7/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/debugger.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.7/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.3/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...emantic layout:\": expected selector or at-rule, was \"body.bp {\"\A         on line 7 of /Users/Benton/Projects/Clouud/app/stylesheets/print.scss\A \A 2: \A 3: // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:\A 4: @include blueprint-print\A 5: \A 6: //Recommended Blueprint configuration with scoping and semantic layout:\A 7: body.bp {\A 8:   @include blueprint-print(true); }"; }

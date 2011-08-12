@@ -1,0 +1,22 @@
+#index
+  %header
+    %h1
+      Clouud
+    %h2
+      A unicorn of a service.
+
+  %form{:action => find_room_path, :type => :post, :class => 'formtastic'}
+    %p
+      %input{:name => 'room', :placeholder => "Anything..."}
+      %br
+      %input{:name => 'submit', :type => 'submit', :value => 'Join a room'}
+      
+  .nearby.span-24
+    .span-16.prepend-4
+      %h2
+        Rooms Near You Now
+      %ul
+        - @nearby_rooms.each do |room|
+          %li
+            = link_to(room, show_room_path(room))
+        

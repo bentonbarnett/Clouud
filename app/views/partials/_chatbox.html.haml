@@ -1,0 +1,25 @@
+#actions.span-24
+  #chatbox
+    - if new_message
+      .status
+        %p
+          Currently chatting in
+          = new_message.room
+          as
+          = new_message.nickname
+    .span-24
+      = semantic_form_for(new_message) do |form|
+        = form.input :nickname, :as => :hidden
+        = form.input :room, :as => :hidden
+        = form.input :color, :as => :hidden
+        = form.input :message, :label => false, :input_html => {:placeholder => 'Say Something...', :autofocus => true}
+        = form.commit_button :button_html => { :value => 'Say it', :disable_with => 'Now Wait...' }
+  #nickbox
+    .instructions
+      %p
+        Change your nickname
+    %form{:action => change_nickname_path, :method => 'post', :class => 'formtastic'}
+      %input{:name => :room, :type => :hidden, :value => @room}
+      %input{:name => :nickname, :placeholder => 'Nickname', :required => true}
+      %input{:type => :submit, :value => 'Change Nickname'}
+    

@@ -1,0 +1,15 @@
+.messages
+  %ul
+    - @messages.each do |message|
+      %li.message
+        %span{:class => 'nickname'}
+          %font{:color => message.color_as_hex}
+            = message.nickname
+        said:
+        %span{:class => 'text'}
+          = message.text
+        %span{:class => 'time', :title => message.created_at}
+          = distance_of_time_in_words(DateTime.now, message.created_at)
+          ago
+  
+= render :partial => 'partials/chatbox', :locals => {:new_message => @new_message}

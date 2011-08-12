@@ -6,7 +6,13 @@ gem 'rails', '3.0.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'mysql'
+  gem 'ruby-debug19'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -14,8 +20,6 @@ gem 'mysql'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-gem 'ruby-debug19'
 
 # Bundle the extra gems:
 # gem 'bj'

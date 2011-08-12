@@ -5,8 +5,18 @@
     %h2
       A unicorn of a service.
 
-  %form{:action => find_room_path, :type => :post, :class => 'formtastic'}
+  %form{:action => find_room_path, :method => :post, :class => 'formtastic'}
     %p
       %input{:name => 'room', :placeholder => "Anything..."}
       %br
       %input{:name => 'submit', :type => 'submit', :value => 'Join a room'}
+      
+  .nearby.span-24
+    .span-16.prepend-4
+      %h2
+        Active Rooms Near You
+      %ul
+        - @active_rooms.each do |room|
+          %li
+            = link_to(room, show_room_path(room))
+        

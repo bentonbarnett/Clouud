@@ -38,5 +38,8 @@ module Clouud
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # Turn on assets
+    config.assets.enabled = true
   end
 end

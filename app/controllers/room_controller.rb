@@ -5,7 +5,7 @@ class RoomController < ApplicationController
   
   def show
     join_room params['room']
-    @new_message = Message.new :nickname => @nickname, :room => @room, :color => @color
+    @new_message = Message.new :nickname => @nickname, :room => @room, :color_id => @color.id
     
     @messages = Message.where('room = ?', params['room']).where('created_at >= ?', timeout)
   end

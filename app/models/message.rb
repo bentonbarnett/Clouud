@@ -4,7 +4,7 @@ class Message < ActiveRecord::Base
   belongs_to :color
 
   def color_as_hex
-    "##{color}"
+    "##{color.hex}"
   end
 
   def text

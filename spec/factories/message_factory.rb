@@ -3,6 +3,6 @@ FactoryGirl.define do
     nickname 'Name'
     room 'Room'
     message 'Message'
-    color 'FF0000'
+    color Color.first
   end
 end

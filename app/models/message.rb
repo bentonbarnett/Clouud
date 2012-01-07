@@ -1,5 +1,7 @@
 class Message < ActiveRecord::Base
   validates_presence_of :nickname, :room, :message
+  
+  belongs_to :color
 
   def color_as_hex
     "##{color}"

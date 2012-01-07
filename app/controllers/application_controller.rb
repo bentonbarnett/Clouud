@@ -32,11 +32,12 @@ class ApplicationController < ActionController::Base
   end
   
   def next_color(color)
-    attempted_color = Color.find(color.id + 1)
     
-    unless attempted_color
-      attempted_color = Color.first
+    unless Color.last == color
+      attempted_color = Color.find(color.id + 1)
     end
+
+    attempted_color ||= Color.first
     
     attempted_color
   end

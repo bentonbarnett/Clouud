@@ -7,6 +7,7 @@ gem 'rails', '3.1'
 # in production environments by default.
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
+  gem 'compass', git: 'git://github.com/chriseppstein/compass', branch: 'master'
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
 end
@@ -27,7 +28,6 @@ gem 'geokit'
 gem 'haml'
 gem 'sass-rails', '~> 3.1.0'
 gem 'formtastic', '~> 1.2.3'
-gem 'compass', :git => "git://github.com/chriseppstein/compass.git"
 gem 'factory_girl_rails'
 gem "jquery-rails"
 gem 'heroku'

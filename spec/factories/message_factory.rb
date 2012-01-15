@@ -3,6 +3,6 @@ FactoryGirl.define do
     nickname 'Name'
     room 'Room'
     message 'Message'
-    color Color.first
+    color {Factory(:color)}
   end
 end
